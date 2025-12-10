@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Когтеточки для кошек - Tuchentsiya</title>
+        <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
+        <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
+        <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" sizes="180x180">
+        <link rel="stylesheet" href="./indexStyle.css" />
+        <link rel="stylesheet" href="fonts/fonts.css" />
+        <link rel="stylesheet" href="slider/styleSlider.css" />
+        <script src="cart/cart.js"></script> 
+    </head>
+    <body>
+        <header class="header">
+            <nav class="header_menu">
+                <ul class="header_menu-list">
+                    <li class="header_menu-item menu-item_no-bullit">
+                        <a class="menu-item_link-active" href="index.html">главная</a>
+                    </li>
+                    <li class="header_menu-item">
+                        <a href="#about-section">о нас</a>
+                    </li>
+                    <li class="header_menu-item products">
+                        <a href="#0">товары</a>
+                        <ul class="products-list">
+                            <li><a href="food.html">Корм</a></li>
+                            <li><a href="houses.html">Лежанки</a></li>
+                            <li><a href="toys.html">Игрушки</a></li>
+                            <li><a href="scratching.html">Когтеточки</a></li>
+                            <li><a href="bowl.html">Миски и поилки</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> 
+            <a class="header_logo">
+                <img src="assets/images/logo/logo_cat.png" alt="Логотип магазина" width="331" height="189">
+            </a>
+            <address class="address">
+                <a href="tel:+79999999999">+7 999 999 99 99</a>
+                <br>
+                <a href="mailto:tucha@mail.ru">tucha@mail.ru</a>
+                <p>мкр-н Паново, д.22</p>
+                <p>Кострома</p>
+                <button class="cart-btn" id="open-cart">
+                  🛒
+                  <span class="cart-count">0</span>
+              </button>
+            </address>           
+        </header>
+        <main class="main">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <picture>
+                            <source srcset="slider/images/mobile/1.jpg" media="(max-width: 425px)">
+                            <source srcset="slider/images/1.jpeg" media="(min-width: 426px)">
+                            <img src="slider/images/1.jpeg" alt="Слайд">
+                        </picture>
+                    </div>
+
+                    <div class="slide">
+                        <picture>
+                            <source srcset="slider/images/mobile/2.jpg" media="(max-width: 425px)">
+                            <source srcset="slider/images/2.jpeg" media="(min-width: 426px)">
+                            <img src="slider/images/2.jpeg" alt="Слайд">
+                        </picture>
+                    </div>
+                    <div class="slide">
+                        <picture>
+                            <source srcset="slider/images/mobile/3.jpg" media="(max-width: 425px)">
+                            <source srcset="slider/images/3.jpg" media="(min-width: 426px)">
+                            <img src="slider/images/3.jpg" alt="Слайд">
+                        </picture>
+                    </div>
+                </div>
+                    <button class="button_slider prev">&#10094;</button>
+                    <button class="button_slider next">&#10095;</button>
+                    <script  src="slider/index.js"></script>
+            </div>         
+            <div class="categories" id="categories-section">
+                <div>
+                    <h2 class="title">Категории</h2>
+                </div>
+                <div class="container">
+                    <div class="product_info">
+                        <a href="food.html">
+                            <img src="assets/images/categories/item1.jpeg" alt="Кошачий корм" class="product_image">
+                        </a>
+                        <a href="food.html" class="text">Кошачий корм</a>
+                    </div>
+                    <div class="product_info">
+                        <a href="houses.html">
+                            <img src="assets/images/categories/item2.jpeg" alt="Лежанки" class="product_image">
+                        </a>
+                        <a href="houses.html" class="text">Лежанки</a>
+                    </div>
+                    <div class="product_info">
+                        <a href="toys.html">
+                            <img src="assets/images/categories/item3.jpeg" alt="Игрушки" class="product_image">
+                        </a>
+                        <a href="toys.html" class="text">Игрушки для кошек</a>
+                    </div>
+                    <div class="product_info">
+                        <a href="scratching.html">
+                            <img src="assets/images/categories/item4.jpeg" alt="Когтеточки" class="product_image">
+                        </a>
+                        <a href="scratching.html" class="text">Когтеточки</a>
+                    </div>
+                    <div class="product_info">
+                        <a href="bowl.html">
+                            <img src="assets/images/categories/item5.jpeg" alt="Миски" class="product_image">
+                        </a>
+                        <a href="bowl.html" class="text">Миски</a>
+                    </div>                
+                </div>
+            </div>
+
+            <div class="block" id="about-section">
+                <div class="about-section">
+                    <h2 class="title">О нас</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p><strong>Tuchentsiya</strong> - это магазин, где есть всё для ваших любимых кошек!</p>             
+                            <div class="about-features">
+                                <div class="feature">
+                                    <h3>🛒 Широкий ассортимент</h3>
+                                    <p>Корм, игрушки, лежанки, когтеточки, миски и многое другое.</p>
+                                </div>                  
+                                <div class="feature">
+                                    <h3>📦 Онлайн-заказы</h3>
+                                    <p>Удобное оформление заказа через сайт с быстрой доставкой.</p>
+                                </div>                   
+                                <div class="feature">
+                                    <h3>💰 Выгодные цены</h3>
+                                    <p>Регулярные скидки и специальные предложения для наших клиентов.</p>
+                                </div>                   
+                                <div class="feature">
+                                    <h3>🐾 Для ваших питомцев</h3>
+                                    <p>Всё только качественные товары для здоровья и радости ваших кошек.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="api-section" id="api-section">
+                <div class="block">
+                    <h2 class="title">Наши любимые пушистики</h2>
+                    <div class="api-content" id="cat-api-content">
+                        <p>Загрузка котика...</p>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </main>      
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <nav class="header_menu">
+                    <ul class="header_menu-list">
+                        <li class="header_menu-item menu-item_no-bullit">
+                            <a href="index.html">главная</a>
+                        </li>                   
+                        <li class="header_menu-item">
+                            <a href="#categories-section">товары</a>
+                        </li>
+                    </ul>
+                </nav>  
+                <div class="footer-signature">
+                    <p>Tuchentsiya © 2025 - Всё для ваших кошек</p>
+                </div>
+            </div>
+        </footer>
+        
+        <dialog class="cart-modal" id="cart-modal">
+          <div class="cart-modal-header">
+              <h2>Корзина</h2>
+              <button class="close-cart" id="close-cart">×</button>
+          </div>          
+          <div class="cart-modal-content">
+              <div class="cart-items-list" id="cart-items">
+                  <div class="empty-cart-message" id="empty-cart">
+                      Корзина пуста
+                  </div>
+              </div>              
+              <div class="cart-summary">                
+                  <div class="summary-row">
+                      <span>Итого:</span>
+                      <span class="total-amount" id="cart-total-price">0 ₽</span>
+                  </div>                 
+                  <button class="checkout-btn" id="checkout-btn">Оформить заказ</button>
+                  <button class="clear-cart-btn" id="clear-cart">Очистить корзину</button>
+              </div>
+          </div>
+        </dialog>
+        <dialog class="checkout-modal" id="checkout-modal">
+            <div class="cart-modal-header">
+                <h2>Оформление заказа</h2>
+                <button class="close-checkout" id="close-checkout">×</button>
+            </div>
+            
+            <div class="checkout-content">
+                <form id="order-form">
+                    <div class="form-group">
+                        <label>Имя и фамилия:</label>
+                        <input type="text" required placeholder="Иван Иванов">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Телефон:</label>
+                        <input type="tel" required placeholder="+7 999 999 99 99">
+                    </div>                   
+                    <div class="form-group">
+                        <label>Адрес доставки:</label>
+                        <input type="text" required placeholder="г. Кострома, мкр-н Паново, д. 22">
+                    </div>                   
+                    <div class="form-group">
+                        <label>Email (необязательно):</label>
+                        <input type="email" placeholder="tucha@mail.ru">
+                    </div>                   
+                    <div class="form-group">
+                        <label>Комментарий к заказу:</label>
+                        <textarea placeholder="Добавьте комментарий.."></textarea>
+                    </div>                   
+                    <div class="checkout-summary">
+                        <h3>Итого к оплате: <span id="order-total">0 ₽</span></h3>
+                    </div>                   
+                    <button type="submit" class="submit-order-btn">Подтвердить заказ</button>
+                </form>
+            </div>
+        </dialog>
+
+        <script src="cart/cart.js"></script>
+        <script src="api/api.js"></script>
+
+    </body>
+</html>
